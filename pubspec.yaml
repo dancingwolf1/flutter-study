@@ -1,0 +1,264 @@
+name: flutter_spterp
+description: txrj spterp flutter app
+
+version: 4.0.0+1
+
+environment:
+  sdk: ">=2.2.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  flutter_localizations:
+    sdk: flutter
+  barcode_scan: ^1.0.0
+  webview_flutter: ^0.3.9+1
+  dio: ^2.1.10
+  fluttertoast: ^3.0.4
+  shared_preferences: ^0.5.3+2
+  pull_to_refresh: ^1.3.1
+  flutter_datetime_picker: ^1.2.0
+  flutter_circular_chart: ^0.1.0
+  charts_flutter: ^0.8.1
+  font_awesome_flutter: ^8.4.0
+  flutter_sparkline: ^0.1.0
+  flutter_spinkit: ^3.1.0
+  fcharts: ^0.0.10
+  image_picker: ^0.6.0+10
+  package_info: ^0.4.0+4
+  flutter_swiper: ^1.1.6
+  flutter_html: ^0.10.4
+  url_launcher: ^5.0.3
+  extended_image: ^0.5.3
+  flutter_image_compress: ^0.6.1
+  qr_flutter: ^2.0.0
+  fl_chart: ^0.1.5
+  video_player: '0.7.2'#视频播放
+  chewie: ^0.9.6     #视频插件
+  path: ^1.6.2
+  path_provider: ^1.2.0
+  flutter_screenutil: ^0.6.0
+  time_picker: ^0.0.1
+  flutter_luban: ^0.1.1
+  yin_drag_sacle: ^0.0.2
+  provider: ^4.0.4 #状态管理器
+  event_bus: ^1.1.1 #事件广播
+  dropdown_menu:
+    git:
+      url: https://github.com/zzlhr/flutter_dropdown_menu.git
+      ref: master
+  extended_text: ^0.6.6
+  # 地图
+  amap_base:
+    git:
+      url: https://github.com/yohom/amap_base_flutter.git
+      ref: develop
+      path: base
+  signature: ^2.0.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/logo@2x.png
+    - images/nomore.png
+    - images/che.png
+    - images/che-color.png
+    - images/icon.png
+    - images/icon01.png
+    - images/icon02.png
+    - images/icon03.png
+    - images/icon04.png
+    - images/icon05.png
+    - images/icon06.png
+    - images/icon07.png
+    - images/icon08.png
+    - images/icon09.png
+    - images/icon10.png
+    - images/icon11.png
+    - images/icon12.png
+    - images/icon13.png
+    - images/icon14.png
+    - images/icon15.png
+    - images/icon16.png
+    - images/icon17.png
+    - images/icon18.png
+    - images/icon19.png
+    - images/icon20.png
+    - images/message.png
+    - images/car_brack.png
+    - images/car_construction.png
+    - images/car_construction_site.png
+    - images/car_drag_pump.png
+    - images/car_Inside_field.png
+    - images/car_production.png
+    - images/car_repair.png
+    - images/car_rest.png
+    - images/car_wait.png
+    - images/jianzhu.png
+    - images/kucun.png
+    - images/renwunew.png
+    - images/shengchan.png
+    - images/background.png
+    - images/trademark.png
+    - images/weixin.png
+    - images/zhifubao.png
+    - images/index_logo.png
+    - images/index_title.png
+    - images/index_title_white.png
+    - images/index_p.png
+    - images/index_bg.png
+    - images/index_bg.png
+    - images/index_01.png
+    - images/index_02.png
+    - images/index_03.png
+    - images/index_04.png
+    - images/index_05.png
+    - images/index_06.png
+    - images/index_07.png
+    - images/index_08.png
+    - images/index_09.png
+    - images/index_10.png
+    - images/index_11.png
+    - images/index_12.png
+    - images/index_13.png
+    - images/index_14.png
+    - images/index_15.png
+    - images/index_16.png
+    - images/index_17.png
+    - images/index_18.png
+    - images/index_19.png
+    - images/index_20.png
+    - images/index_21.png
+    - images/index_22.png
+    - images/tab_bottom_01.png
+    - images/tab_bottom_02.png
+    - images/tab_bottom_03.png
+    - images/tab_bottom_04.png
+    - images/tab_bottom_05.png
+    - images/untab_bottom_05.png
+    - images/untab_bottom_01.png
+    - images/untab_bottom_02.png
+    - images/untab_bottom_03.png
+    - images/untab_bottom_04.png
+    - images/untab_bottom_05.png
+    - images/ERP_qr.png
+    - images/ERP_logo.png
+    - images/login_err.png
+    - images/login_pro.png
+    - images/login_er.png
+    - images/login_err.png
+    - images/login_eye_offer.png
+    - images/index_lock.png
+    - images/index_eye.png
+    - images/paper_delete.png
+    - images/paper_edit.png
+    - images/conteract_funnel.png
+    - images/2.0x/index_logo.png
+    - images/2.0x/index_title.png
+    - images/2.0x/index_title_white.png
+    - images/2.0x/index_bg.png
+    - images/2.0x/index_01.png
+    - images/2.0x/index_02.png
+    - images/2.0x/index_03.png
+    - images/2.0x/index_04.png
+    - images/2.0x/index_05.png
+    - images/2.0x/index_06.png
+    - images/2.0x/index_07.png
+    - images/2.0x/index_08.png
+    - images/2.0x/index_09.png
+    - images/2.0x/index_10.png
+    - images/2.0x/index_11.png
+    - images/2.0x/index_12.png
+    - images/2.0x/index_13.png
+    - images/2.0x/index_14.png
+    - images/2.0x/index_15.png
+    - images/2.0x/index_16.png
+    - images/2.0x/index_17.png
+    - images/2.0x/index_18.png
+    - images/2.0x/index_19.png
+    - images/2.0x/index_20.png
+    - images/2.0x/index_21.png
+    - images/2.0x/index_22.png
+    - images/2.0x/tab_bottom_01.png
+    - images/2.0x/tab_bottom_02.png
+    - images/2.0x/tab_bottom_03.png
+    - images/2.0x/tab_bottom_04.png
+    - images/2.0x/tab_bottom_05.png
+    - images/2.0x/untab_bottom_05.png
+    - images/2.0x/untab_bottom_01.png
+    - images/2.0x/untab_bottom_02.png
+    - images/2.0x/untab_bottom_03.png
+    - images/2.0x/untab_bottom_04.png
+    - images/2.0x/untab_bottom_05.png
+    - images/2.0x/login_err.png
+    - images/2.0x/login_pro.png
+    - images/2.0x/ERP_qr.png
+    - images/2.0x/ERP_logo.png
+    - images/2.0x/login_er.png
+    - images/2.0x/login_err.png
+    - images/2.0x/login_eye_offer.png
+    - images/2.0x/index_lock.png
+    - images/2.0x/index_eye.png
+    - images/2.0x/conteract_funnel.png
+    - images/2.0x/paper_delete.png
+    - images/2.0x/paper_edit.png
+    - images/3.0x/index_logo.png
+    - images/3.0x/index_title.png
+    - images/3.0x/index_title_white.png
+    - images/3.0x/index_bg.png
+    - images/3.0x/index_01.png
+    - images/3.0x/index_02.png
+    - images/3.0x/index_03.png
+    - images/3.0x/index_04.png
+    - images/3.0x/index_05.png
+    - images/3.0x/index_06.png
+    - images/3.0x/index_07.png
+    - images/3.0x/index_08.png
+    - images/3.0x/index_09.png
+    - images/3.0x/index_10.png
+    - images/3.0x/index_11.png
+    - images/3.0x/index_12.png
+    - images/3.0x/index_13.png
+    - images/3.0x/index_14.png
+    - images/3.0x/index_15.png
+    - images/3.0x/index_16.png
+    - images/3.0x/index_17.png
+    - images/3.0x/index_18.png
+    - images/3.0x/index_19.png
+    - images/3.0x/index_20.png
+    - images/3.0x/index_21.png
+    - images/3.0x/index_22.png
+    - images/3.0x/tab_bottom_01.png
+    - images/3.0x/tab_bottom_02.png
+    - images/3.0x/tab_bottom_03.png
+    - images/3.0x/tab_bottom_04.png
+    - images/3.0x/tab_bottom_05.png
+    - images/3.0x/untab_bottom_05.png
+    - images/3.0x/untab_bottom_01.png
+    - images/3.0x/untab_bottom_02.png
+    - images/3.0x/untab_bottom_03.png
+    - images/3.0x/untab_bottom_04.png
+    - images/3.0x/untab_bottom_05.png
+    - images/3.0x/ERP_qr.png
+    - images/3.0x/ERP_logo.png
+    - images/3.0x/login_err.png
+    - images/3.0x/login_pro.png
+    - images/3.0x/login_er.png
+    - images/3.0x/login_err.png
+    - images/3.0x/login_eye_offer.png
+    - images/3.0x/index_lock.png
+    - images/3.0x/index_eye.png
+    - images/3.0x/conteract_funnel.png
+    - images/3.0x/paper_delete.png
+    - images/3.0x/paper_edit.png
+    - images/home_map_icon_positioning_nor.png
+    - images/txdownload.png
+    - images/update_message.png
